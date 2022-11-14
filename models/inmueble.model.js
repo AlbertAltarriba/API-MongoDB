@@ -7,7 +7,7 @@ const inmuebleSchema = new Schema({
         type: String,
         validate: {
             validator: (v) => {
-              return v.length === 1 && /[a-zA-Z]/.test(v) || v.length === 0; //comprobamos que solo hay 1 carácter alfabético o vacío
+              return v.length === 1 && /[a-zA-Z]/.test(v) || v.length === 0; //comprobamos que solo hay 1 carácter alfabético o que esté vacío
             },
             message: 'Debes introducir solo un carácter alfabético'
         }
@@ -23,7 +23,7 @@ const inmuebleSchema = new Schema({
         required: [true, 'El campo nombre es obligatorio'],
         validate: {
             validator: (v) => {
-              return /[a-zA-Z]+\s[a-zA-Z]+/.test(v); //comprobamos que hay almenos 2 palabras
+              return /[a-zA-Z]+\s[a-zA-Z]+/.test(v); //comprobamos que hay al menos 2 palabras
             },
             message: 'Introduce nombre y apellido'
         }

@@ -7,7 +7,6 @@ Content-Type: application/json
 
 {
     "piso": "4º",
-    "letra": "A",
     "extensión": "67m2",
     "numHabitaciones": 2,
     "alquilado": false,
@@ -24,7 +23,7 @@ Content-Type: application/json
     "piso": "3º",
     "letra": "A",
     "extensión": "69m2",
-    "numHabitaciones": 2,
+    "numHabitaciones": 3,
     "alquilado": true,
     "nombrePropietario": "Pepito",
     "mail": "pepa@gmail.com"
@@ -32,4 +31,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/inmuebles/635d2ace5860a12eec36b5ab
+DELETE http://localhost:3000/api/inmuebles/635d4e0743faa17885a98930
