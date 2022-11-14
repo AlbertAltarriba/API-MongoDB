@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "piso": "4º",
+    "letra": "A",
+    "extensión": "67m2",
+    "numHabitaciones": 2,
+    "alquilado": false,
+    "nombrePropietario": "Pepito P",
+    "mail": "pepa@gmail.com"
+}
+
+###
+
+PUT http://localhost:3000/api/inmuebles/635d4e0743faa17885a98930
+Content-Type: application/json
+
+{
+    "piso": "3º",
+    "letra": "A",
+    "extensión": "69m2",
+    "numHabitaciones": 2,
+    "alquilado": true,
+    "nombrePropietario": "Pepito",
+    "mail": "pepa@gmail.com"
+}
+
+###
+
+DELETE http://localhost:3000/api/inmuebles/635d2ace5860a12eec36b5ab
